@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-graphcms",
+  "author": "Ola Taube",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "apollo-client": "^0.5.23",
+    "graphql-tag": "^1.1.2",
+    "isomorphic-fetch": "^2.2.1",
+    "nuxt": "^0.9.9",
+    "axios": "^0.15.2"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "css-loader": "^0.27.3",
+    "node-sass": "^4.5.1",
+    "sass-loader": "^6.0.3",
+    "webpack": "^2.2.1"
+  }
+}
