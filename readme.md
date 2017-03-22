@@ -10,4 +10,8 @@ https://dev-blog.apollodata.com/use-apollo-in-your-vuejs-app-89812429d8b2#.x8kty
 Nuxt
 Layout: https://nuxtjs.org/examples/layouts
 
+Build the latest image
 $ docker build -t getitdone/nuxt-graphcms:latest .
+
+Push the latest image to docker repo
+$ docker push getitdone/nuxt-graphcms:latest
