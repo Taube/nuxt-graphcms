@@ -1,6 +1,0 @@
-{
-  "name": "server",
-  "dependencies": {
-    "nuxt-cluster": "^0.0.2"
-  }
-}

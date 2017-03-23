@@ -1,0 +1,6 @@
+version: '2'
+services:
+  nuxt:
+    image: "getitdone/nuxt-graphcms:latest"
+    ports:
+     - "3000:3000"

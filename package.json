@@ -8,17 +8,18 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "express": "^4.15.2",
+    "express-request-proxy": "^2.0.0",
+    "compression": "^1.6.2",
     "apollo-client": "^0.5.23",
+    "axios": "^0.15.2",
+    "bootstrap": "^4.0.0-alpha.6",
     "graphql-tag": "^1.1.2",
     "isomorphic-fetch": "^2.2.1",
-    "nuxt": "^0.9.9",
-    "axios": "^0.15.2"
-  },
-  "devDependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
-    "css-loader": "^0.27.3",
     "node-sass": "^4.5.1",
+    "nuxt": "^0.9.9",
     "sass-loader": "^6.0.3",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "morgan": "^1.8.1"
   }
 }

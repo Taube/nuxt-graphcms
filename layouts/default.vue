@@ -30,5 +30,4 @@ export default {
 @import '~bootstrap/scss/type';
 @import '~bootstrap/scss/nav';
 @import '~bootstrap/scss/navbar';
-
 </style>
