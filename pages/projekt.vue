@@ -1,13 +1,13 @@
 <template>
-	<index/>
+	<project/>
 </template>
 
 <script>
-import Index from '~/partials/Index.vue'
+import Project from '~/partials/Project.vue'
 
 export default {
 	components: {
-		Index
+		Project
 	}
 }
 </script>

@@ -1,0 +1,16 @@
+{
+  "links": {
+    "start": "Start",
+    "project": "Projekte",
+    "swedish": "Svenskversjon",
+    "norwegian": "Norskeversion"
+  },
+  "start": {
+    "title": "Det er en grejt webbeside!",
+    "description": "Ditte är siidn på nursk."
+  },
+  "project": {
+    "title": "Projekte",
+    "description": "Noge gutt om projekta"
+  }
+}

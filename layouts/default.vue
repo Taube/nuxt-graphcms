@@ -1,33 +1,53 @@
 <template>
-	<main>
-		<top-bar />
-		<main-nav />
+	<div class="site">
+		<top-section />
+		<nav-section />
 		<nuxt/>
-		<main-footer/>
-	</main>
+		<footer-section/>
+	</div>
 </template>
 
 <script>
-import TopBar from '~components/Top.vue';
-import MainNav from '~components/Nav.vue';
-import MainFooter from '~components/Footer.vue';
-
+import TopSection from '~components/Top.vue';
+import NavSection from '~components/Nav.vue';
+import FooterSection from '~components/Footer.vue';
 
 export default {
 	components: {
-		TopBar,
-		MainNav,
-		MainFooter
-	}
+		TopSection,
+		NavSection,
+		FooterSection
+	},
+	data () {
+    return {
+      page: this.$store.state.page
+    }
+  },
+	head () {
+    return {
+      title: this.page.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.page.description },
+				{ hid: 'keywords', name: 'keywords', content: this.page.keywords }
+      ]
+    }
+  }
 }
 </script>
 
+<style>
+@reset-global mobile;
+@lost flexbox flex;
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.main {
+	flex: 1;
+}
+.container {
+  lost-center: 980px 30px;
+}
 
-<style lang="scss">
-@import '~bootstrap/scss/bootstrap-reboot';
-@import '~bootstrap/scss/buttons';
-@import '~bootstrap/scss/grid';
-@import '~bootstrap/scss/type';
-@import '~bootstrap/scss/nav';
-@import '~bootstrap/scss/navbar';
 </style>

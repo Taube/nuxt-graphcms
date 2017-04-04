@@ -14,8 +14,6 @@ config.dev = !(process.env.NODE_ENV === 'production')
 const nuxt = new Nuxt(config)
 app.use(nuxt.render)
 
-console.log('config.dev: ' + config.dev);
-
 // Build only in dev mode.
 if (config.dev) {
 	nuxt.build()

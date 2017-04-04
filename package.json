@@ -8,18 +8,27 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "apollo-client": "^0.5.23",
+    "axios": "^0.15.3",
+    "bootstrap": "^4.0.0-alpha.6",
+    "compression": "^1.6.2",
+    "cssnano": "^3.10.0",
     "express": "^4.15.2",
     "express-request-proxy": "^2.0.0",
-    "compression": "^1.6.2",
-    "apollo-client": "^0.5.23",
-    "axios": "^0.15.2",
-    "bootstrap": "^4.0.0-alpha.6",
+    "fs": "0.0.1-security",
     "graphql-tag": "^1.1.2",
     "isomorphic-fetch": "^2.2.1",
-    "node-sass": "^4.5.1",
-    "nuxt": "^0.9.9",
+    "jsonfile": "^2.4.0",
+    "lost": "^8.0.0",
+    "morgan": "^1.8.1",
+    "node-sass": "^4.5.2",
+    "node-webhooks": "^1.1.32",
+    "normalize.css": "^6.0.0",
+    "nuxt": "^0.10.5",
+    "postcss-css-reset": "^1.0.2",
+    "postcss-custom-media": "^5.0.1",
     "sass-loader": "^6.0.3",
-    "webpack": "^2.2.1",
-    "morgan": "^1.8.1"
+    "vue-lazyload": "^1.0.3",
+    "vue-sticky": "^3.1.5"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "links": {
+    "start": "Start",
+    "project": "Projekt",
+    "swedish": "Svensk version",
+    "norwegian": "Norsk version"
+  },
+  "start": {
+    "title": "Välkommen!",
+    "description": "Detta är startsidan på Svenska."
+  },
+  "project": {
+    "title": "Projekt",
+    "description": "Något om projekten..."
+  },
+  "propertydevelopers": {
+    "title": "Fastighetsutvecklare",
+    "description": "Om Fastighetsutvecklare"
+  }
+}
