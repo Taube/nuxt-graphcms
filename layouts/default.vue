@@ -38,10 +38,13 @@ export default {
 <style>
 @reset-global mobile;
 @lost flexbox flex;
+
+
 .site {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	max-height: 1000000px;
 }
 .main {
 	flex: 1;

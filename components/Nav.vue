@@ -1,6 +1,7 @@
 <template>
-	<section class="navbar" v-sticky="{ zIndex: 0, stickyTop: 0 }">
-		<div class="container">
+	<section class="sticky" v-sticky="{ zIndex: 100, stickyTop: 0 }">
+		<div class="navbar">
+			<div class="container">
 
 				<nuxt-link class="navbar__brand" :to="path('/')" exact>
 					<img src="/images/logo.svg" class="brand__logo">
@@ -15,7 +16,7 @@
 						</li>
 					</ul>
 				</nav>
-
+			</div>
 		</div>
 	</section>
 </template>
@@ -47,7 +48,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 .navbar__brand {
 	lost-column: 1/3;
 }
@@ -55,8 +55,14 @@ export default {
 	lost-column: 2/3;
 }
 
+.sticky {
+	box-sizing: inherit;
+}
 .navbar {
+	float: left;
+	width: 100%;
 	min-height: 84px;
+	background-color: #fff;
 	box-shadow: 0 1px 0 rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.1);
 }
 .navbar__ul {

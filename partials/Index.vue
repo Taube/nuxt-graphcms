@@ -1,15 +1,28 @@
 <template>
 	<main class="main">
-		<section class="hero hero--start">
-				<div class="container">
-					<article class="hero__content">
-						<h1>{{ $t('start.title') }}</h1>
-						<p>{{ $t('start.description') }}</p>
-					</article>
-				</div>
-		</section>
+		<component v-for="block in blocks"
+			:id="block.id"
+			:is="block.type"
+			:block="block"
+			:key="block.id">
+		</component>
 	</main>
 </template>
+
+<script>
+import HERO from '~components/HERO.vue';
+
+export default {
+	components: {
+		HERO
+  },
+	computed: {
+    blocks () {
+      return this.$store.state.blocks
+    }
+  }
+}
+</script>
 
 <style>
 .hero__content {

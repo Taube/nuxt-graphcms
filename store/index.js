@@ -4,6 +4,7 @@ import { dispatch } from 'vuex'
 
 export const state = {
   page: {},
+  blocks: [],
   navItems: []
 }
 
@@ -20,6 +21,20 @@ export const actions = {
   			title
   			description
   			keywords
+        block {
+          id
+          type
+          title
+          subtitle
+          preamble
+          image {
+            fileName
+            handle
+            url
+            mimeType
+            size
+          }
+        }
   		},
   		allLinks(filter: {
   			isPublished: true
@@ -49,11 +64,12 @@ export const actions = {
       }).then((res) => {
         // console.log(res.data)
         state.commit('setPage', res.data.Page)
+        state.commit('setBlocks', res.data.Page.block)
         state.commit('setNavItems', res.data.allLinks)
         resolve()
       }).catch((error) => {
-        console.error(error)
-        reject() 
+        // console.error(error)
+        reject()
       })
     })
   }
@@ -62,6 +78,9 @@ export const actions = {
 export const mutations = {
   setPage: (state, data) => {
     state.page = Object.assign({}, data)
+  },
+  setBlocks: (state, data) => {
+    state.blocks = Object.assign({}, data)
   },
   setNavItems: (state, data) => {
     state.navItems = Object.assign({}, data)

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Fastigetsutevecklare from '~/partials/fastighetsutvecklare.vue'
+import Fastigetsutevecklare from '~/partials/Fastighetsutvecklare.vue'
 
 export default {
 	components: {
